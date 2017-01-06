@@ -58,8 +58,7 @@ class App extends React.Component {
 	                        		style={{ width: 200 }}
 	                        		defaultOpenKeys={['sub1', 'sub2']}
 	                        		defaultSelectedKeys={[this.state.current]}
-	                        		mode="inline"
-	                    		>
+	                        		mode="inline">
 		                       	<Menu.Item key="0"><Link to="/myIntroduce"><Icon type="mail" />我没有子菜单</Link></Menu.Item>
 		                        	<SubMenu key="sub1" title={<span><Icon type="bars" /><span>主导航</span></span>}>
 			                            <Menu.Item key="1"><Link to="/myTable">表格</Link></Menu.Item>

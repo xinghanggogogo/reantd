@@ -35,7 +35,6 @@ class myProgress extends React.Component {
 	                    		<Button type="ghost" onClick={this.increase.bind(this)} icon="plus" />
 	                	</ButtonGroup>
 	                	<span>点击按钮可以看到进度条的变化</span>
-
 	                	<Progress percent={30} />
 	                	<Progress percent={50} status="active" />
 	                	<Progress percent={70} status="exception" />
