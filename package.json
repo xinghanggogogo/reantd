@@ -4,7 +4,7 @@
   "description": "webpack app description",
   "main": "index.js",
   "scripts": {
-    "dev": "webpack-dev-server --devtool --progress --port=9999",
+    "dev": "webpack-dev-server --devtool --progress --port=8888",
     "build": "webpack -p"
   },
   "repository": {
