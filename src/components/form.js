@@ -75,16 +75,14 @@ class myForm extends React.Component {
                     		id="control-textarea"
                     		label="文本域"
                     		{...formItemLayout}>
-                    		<Input type="textarea" id="control-textarea" rows="3"
-                    		{...getFieldDecorator('content')} />
+                    		<Input type="textarea" id="control-textarea" rows="3" {...getFieldDecorator('content')} />
                 	</FormItem>
 
 	               <FormItem
 	                    	id="select"
 	                    	label="Select 选择器"
 	                    	{...formItemLayout}>
-	                    	<Select id="select" size="large" defaultValue="lucy" style={{ width: 200 }} onChange={this.handleSelectChange}
-	                        	{...getFieldDecorator('people')}>
+	                    	<Select id="select" size="large" defaultValue="lucy" style={{ width: 200 }} onChange={this.handleSelectChange} {...getFieldDecorator('people')}>
 	                        	<Option value="jack">jack</Option>
 	                        	<Option value="lucy">lucy</Option>
 	                        	<Option value="disabled" disabled>disabled</Option>

@@ -12,6 +12,9 @@ import myTable from './table.js';
 import myForm from './form.js';
 import myProgress from './progress.js';
 import myCarousel from './carousel.js';
+import search from './search.js';
+import login from './login.js'
+
 // import myCalendar from './calendar.js';
 
 let routeMap = {
@@ -66,6 +69,8 @@ class App extends React.Component {
 			                            <Menu.Item key="3"><Link to="/myProgress">进度条</Link></Menu.Item>
 			                            <Menu.Item key="4"><Link to="/myCarousel">轮播</Link></Menu.Item>
 		                        	</SubMenu>
+		                        	<Menu.Item key='5'><Link to="/search">搜索组件</Link></Menu.Item>
+				<Menu.Item key='6'><Link to="/login">登录组件</Link></Menu.Item>
 	                    		</Menu>
                 		</div>
                 		<div id="rightWrap">
@@ -78,7 +83,7 @@ class App extends React.Component {
 	                        		{ this.props.children }
 	                    		</div>
                 		</div>
-            		</div>
+		</div>
 		)
 	}
 }
@@ -94,6 +99,8 @@ ReactDom.render((
 	            	<Route path="myForm" component={myForm} />
 	            	<Route path="myProgress" component={myProgress} />
 	            	<Route path="myCarousel" component={myCarousel} />
+	            	<Route path='search' component={search} />
+	            	<Route path='login' component={login} />
         	</Route>
     </Router>
 ), document.getElementById('app'));

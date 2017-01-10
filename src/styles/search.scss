@@ -1,0 +1,13 @@
+.search {
+	.autocomplete {
+		width:200px;
+		.ant-select-selection--single {
+			border-right: none;
+			border-radius: 5px 0 0 5px
+		}
+	}
+	.search-btn {
+		border-left: none;
+		border-radius: 0 5px 5px 0
+	}
+}
